@@ -1,0 +1,39 @@
+{
+  "name": "list-distribution",
+  "version": "1.0.0",
+  "description": "A helper package for analyzing the distribution of a list based on a field in every item.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-travis-1": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec",
+    "test-travis-2": "./node_modules/.bin/codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivif/list-distribution.git"
+  },
+  "keywords": [
+    "list",
+    "distribution",
+    "analysis",
+    "statistics"
+  ],
+  "author": "Olivia Ifrim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olivif/list-distribution/issues"
+  },
+  "homepage": "https://github.com/olivif/list-distribution#readme",
+  "dependencies": {
+    "hashmap": "^2.0.4",
+    "round": "^2.0.1",
+    "typechecker": "^4.0.1"
+  },
+  "devDependencies": {
+    "codecov": ">1.0.0",
+    "istanbul": ">0.3.2",
+    "mocha": "^2.3.4",
+    "should": "^8.0.2",
+    "test-console": "^1.0.0"
+  }
+}
