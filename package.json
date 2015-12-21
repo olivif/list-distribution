@@ -1,9 +1,10 @@
 {
   "name": "list-distribution",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper package for analyzing the distribution of a list based on a field in every item.",
-  "main": "index.js",
+  "main": "lib/list-distribution.js",
   "scripts": {
+    "start": "node lib/list-distribution.js",
     "test": "mocha",
     "test-travis-1": "istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec",
     "test-travis-2": "./node_modules/.bin/codecov"

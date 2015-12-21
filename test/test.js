@@ -1,7 +1,7 @@
 const should = require("should");
 const stdout = require("test-console").stdout;
 
-const Distribution = require("./../lib/index");
+const Distribution = require("./../lib/list-distribution");
 
 var TestData = {
     Repos: [
