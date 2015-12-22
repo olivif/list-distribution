@@ -4,6 +4,8 @@ A helper package for analyzing the distribution of a list based on a field in ev
 [![Build Status](https://travis-ci.org/olivif/list-distribution.svg?branch=master)](https://travis-ci.org/olivif/list-distribution)
 [![Coverage Status](https://codecov.io/github/olivif/list-distribution/coverage.svg?precision=2)](https://codecov.io/github/olivif/list-distribution)
 
+[![NPM](https://nodei.co/npm/list-distribution.png)](https://npmjs.org/package/list-distribution)
+
 ## How to use it
 
 Construct the distribution with the following parameters
@@ -60,9 +62,9 @@ distribution.printBuckets();
 This is what you should see 
 
 ```sh
-Bucket 1000 -> 5
-Bucket 2000 -> 1
-Bucket 15000 -> 1
+Bucket 0 -> 5
+Bucket 1000 -> 1
+Bucket 14000 -> 1
 ```
 
 This is saying there are 5 repositories with less than 1000 forks, 1 repository with 1000-2000 forks and 1 repository with greater than 15000 forks.
