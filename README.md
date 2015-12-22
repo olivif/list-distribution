@@ -16,6 +16,9 @@ Construct the distribution with the following parameters
  
 ```js
 var distribution = new Distribution(items, getter, precision);
+
+var buckets = distribution.getBuckets();
+
 distribution.printBuckets();
 ```
 
@@ -63,6 +66,11 @@ Bucket 15000 -> 1
 ```
 
 This is saying there are 5 repositories with less than 1000 forks, 1 repository with 1000-2000 forks and 1 repository with greater than 15000 forks.
+
+You can also get the raw buckets if there is any extra processing or printing that you would like to do. 
+```js
+var buckets = distribution.getBuckets();
+```
 
 ## Contributing
 
