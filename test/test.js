@@ -37,10 +37,10 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with null or undefined items", function(done) {
             
-            should(function() { var distrib = new Distribution(null, null, 0); })
+            should(function() { new Distribution(null, null, 0); })
                 .throw("Items is null or undefined");
             
-            should(function() { var distrib = new Distribution(undefined, null, 0); })
+            should(function() { new Distribution(undefined, null, 0); })
                 .throw("Items is null or undefined");
             
             done();
@@ -48,7 +48,7 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with items which arent arrays", function(done) {
             
-            should(function() { var distrib = new Distribution({}, null, 0); })
+            should(function() { new Distribution({}, null, 0); })
                 .throw("Items is not an array");
             
             done();
@@ -56,7 +56,7 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with items which is empty array", function(done) {
             
-            should(function() { var distrib = new Distribution([], null, 0); })
+            should(function() { new Distribution([], null, 0); })
                 .throw("Items is empty, no distribution be analyze");
             
             done();
@@ -64,10 +64,10 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with an null or undefined getter", function(done) {
             
-            should(function() { var distrib = new Distribution(TestData.Repos, null, 0); })
+            should(function() { new Distribution(TestData.Repos, null, 0); })
                 .throw("Getter is null or undefined");
             
-            should(function() { var distrib = new Distribution(TestData.Repos, undefined, 0); })
+            should(function() { new Distribution(TestData.Repos, undefined, 0); })
                 .throw("Getter is null or undefined");
                 
             done();
@@ -75,7 +75,7 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with a getter which isnt a function", function(done) {
             
-            should(function() { var distrib = new Distribution(TestData.Repos, 10, 0); })
+            should(function() { new Distribution(TestData.Repos, 10, 0); })
                 .throw("Getter is not a function");
             
             done();
@@ -83,7 +83,7 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with a NaN precision", function(done) {
             
-            should(function() { var distrib = new Distribution(TestData.Repos, TestData.RepoForksGetter, {}); })
+            should(function() { new Distribution(TestData.Repos, TestData.RepoForksGetter, {}); })
                 .throw("Precision is not a number");
             
             done();
@@ -92,10 +92,10 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with a precision < 1", function(done) {
             
-            should(function() { var distrib = new Distribution(TestData.Repos, TestData.RepoForksGetter, 0); })
+            should(function() { new Distribution(TestData.Repos, TestData.RepoForksGetter, 0); })
                 .throw("Precision should be >= 1");
             
-            should(function() { var distrib = new Distribution(TestData.Repos, TestData.RepoForksGetter, -10); })
+            should(function() { new Distribution(TestData.Repos, TestData.RepoForksGetter, -10); })
                 .throw("Precision should be >= 1");
             
             done();
@@ -103,7 +103,7 @@ describe("Distribution tests", function() {
         
         it("should not be able to contruct a distribution object with a double precision", function(done) {
             
-            should(function() { var distrib = new Distribution(TestData.Repos, TestData.RepoForksGetter, 10.2); })
+            should(function() { new Distribution(TestData.Repos, TestData.RepoForksGetter, 10.2); })
                 .throw("Precision is not a whole number");
             
             done();
