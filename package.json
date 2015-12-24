@@ -1,6 +1,6 @@
 {
   "name": "list-distribution",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A helper package for analyzing the distribution of a list based on a field in every item.",
   "main": "lib/list-distribution.js",
   "scripts": {

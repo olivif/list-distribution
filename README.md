@@ -85,7 +85,8 @@ HashMap {
 		'1000': [ 1000, 1 ], 
 		'14000': [ 14000, 1 ] 
 	} 
-}```
+}
+```
 
 You can find the full example in [example.js](https://github.com/olivif/list-distribution/blob/master/example/example.js).
 
