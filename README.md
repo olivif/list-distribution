@@ -29,7 +29,7 @@ distribution.printBuckets();
 Let's say you have a list of git repositories, and you want to see what the distribution of forks is over your list.  
 
 ```js
-    var repos: [
+    var repos = [
         { forks: 10,    watchers: 20    },
         { forks: 14,    watchers: 243   },
         { forks: 14523, watchers: 13442 },
@@ -74,7 +74,29 @@ You can also get the raw buckets if there is any extra processing or printing th
 var buckets = distribution.getBuckets();
 ```
 
+Note that the buckets object is a [HashMap](https://www.npmjs.com/package/hashmap).
+
+When printed it should look something like this 
+
+```js
+HashMap { 
+	_data: { 
+		'0': [ 0, 5 ], 
+		'1000': [ 1000, 1 ], 
+		'14000': [ 14000, 1 ] 
+	} 
+}```
+
+You can find the full example in [example.js](https://github.com/olivif/list-distribution/blob/master/example/example.js).
+
 ## Contributing
 
 For any ideas, suggestions for improvement or bugs, feel free to [file issues](https://github.com/olivif/list-distribution/issues)! PRs are more than welcome also! Thanks :tada: 
+
+## Projects using list-distribution
+
+If you are using [`list-distribution`](https://github.com/olivif/list-distribution), feel free to send a pull request to added to this list.
+
+Currently we are used by:
      
+* [stories-crawler](https://github.com/olivif/stories-crawler)
