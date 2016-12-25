@@ -3,7 +3,7 @@ A helper package for analyzing the distribution of a list based on a field in ev
 
 [![Build Status](https://travis-ci.org/olivif/list-distribution.svg?branch=master)](https://travis-ci.org/olivif/list-distribution)
 [![Coverage Status](https://codecov.io/github/olivif/list-distribution/coverage.svg?precision=2)](https://codecov.io/github/olivif/list-distribution)
-[![Downloads](https://img.shields.io/npm/dt/list-distribution.svg)
+[![Downloads](https://img.shields.io/npm/dt/list-distribution.svg)](https://www.npmjs.com/package/list-distribution)
 
 [![NPM](https://nodei.co/npm/list-distribution.png)](https://npmjs.org/package/list-distribution)
 
